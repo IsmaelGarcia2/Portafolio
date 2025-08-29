@@ -32,6 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  @apply bg-gradient-to-r from-purple-50 via-pink-50 to-blue-50;
 }
 
 button {

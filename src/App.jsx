@@ -1,21 +1,22 @@
-import Navbar from "./assets/components/Navbar.jsx";
-import About from "./assets/components/About.jsx";
-import Skills from "./assets/components/Skills.jsx";
-import Projects from "./assets/components/Projects.jsx";
-import Contact from "./assets/components/Contact.jsx";
+import Navbar from "./assets/components/Navbar";
+import About from "./assets/components/About";
+import Skills from "./assets/components/Skills";
+import Projects from "./assets/components/Projects";
+import Contact from "./assets/components/Contact";
 
-function App() {
+export default function App() {
   return (
-    <div className="font-sans">
+    <>
       <Navbar />
-      <div className="pt-20">
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
-    </div>
+      <main className="pt-20">
+        {/* Contenedor central */}
+        <div className="max-w-6xl mx-auto px-6 space-y-20">
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
+      </main>
+    </>
   );
 }
-
-export default App;
