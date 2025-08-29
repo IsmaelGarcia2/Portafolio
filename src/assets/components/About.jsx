@@ -5,15 +5,20 @@ export default function About() {
     <section id="About" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="max-w-screen-xl mx-auto">
         <div className="max-w-3xl mx-auto text-center bg-white/10 backdrop-blur-sm p-10 rounded-2xl shadow-lg">
-          <motion.h2
-            className="text-4xl font-bold mb-6 text-white drop-shadow-md"
+
+          {/* Presentación con tu nombre */}
+          <motion.div
+            className="relative sm:min-h-[60px] min-h-auto mb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Sobre mí
-          </motion.h2>
+            <h1 className="py-4 h-full text-4xl font-bold text-white drop-shadow-md">
+              Hey, I'm Ismael García Aquino
+            </h1>
+          </motion.div>
 
+          {/* Descripción */}
           <motion.p
             className="text-lg leading-relaxed text-gray-300"
             initial={{ opacity: 0 }}

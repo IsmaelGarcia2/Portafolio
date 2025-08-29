@@ -1,22 +1,41 @@
+// src/App.jsx
+import { useState } from "react";
+import { motion } from "framer-motion";
 import Navbar from "./assets/components/Navbar";
 import About from "./assets/components/About";
-import Skills from "./assets/components/Skills";
+import SkillsExperience from "./assets/components/SkillsExperience";
 import Projects from "./assets/components/Projects";
 import Contact from "./assets/components/Contact";
 
 export default function App() {
+  const [activeSection, setActiveSection] = useState("about");
+
   return (
-    <>
-      <Navbar />
-      <main className="pt-20">
-        {/* Contenedor central */}
-        <div className="max-w-6xl mx-auto px-6 space-y-20">
+    <div className="bg-gray-900 text-white min-h-screen font-sans">
+      {/* Navbar */}
+      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+
+      <main>
+        {/* About */}
+        <section id="about" className="py-20 px-6">
           <About />
-          <Skills />
+        </section>
+
+        {/* Skills & Experience */}
+        <section id="skills-experience" className="py-20 px-6">
+          <SkillsExperience />
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="py-20 px-6">
           <Projects />
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="py-20 px-6">
           <Contact />
-        </div>
+        </section>
       </main>
-    </>
+    </div>
   );
 }
