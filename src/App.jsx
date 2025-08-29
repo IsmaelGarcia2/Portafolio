@@ -1,11 +1,11 @@
 // src/App.jsx
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Navbar from "./assets/components/Navbar";
-import About from "./assets/components/About";
-import SkillsExperience from "./assets/components/SkillsExperience";
-import Projects from "./assets/components/Projects";
-import Contact from "./assets/components/Contact";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import SkillsExperience from "./components/SkillsExperience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("about");
@@ -22,7 +22,7 @@ export default function App() {
         </section>
 
         {/* Skills & Experience */}
-        <section id="skills-experience" className="py-20 px-6">
+        <section id="skills & experience" className="py-20 px-6">
           <SkillsExperience />
         </section>
 
