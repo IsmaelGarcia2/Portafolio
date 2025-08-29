@@ -20,9 +20,9 @@ export default function Navbar({ activeSection, setActiveSection }) {
         scrolled ? "bg-gray-900/90 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
+      <div className="max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4 sm:px-6 py-4">
         <div className="text-2xl font-bold cursor-pointer">Ismael García</div>
-        <ul className="flex gap-6">
+        <ul className="flex flex-wrap gap-4 sm:gap-6 justify-center sm:justify-end w-full sm:w-auto mt-4 sm:mt-0">
           {sections.map((sec) => (
             <li
               key={sec}
@@ -31,10 +31,12 @@ export default function Navbar({ activeSection, setActiveSection }) {
               }`}
               onClick={() => {
                 setActiveSection(sec);
-                document.getElementById(sec).scrollIntoView({ behavior: "smooth" });
+                document
+                  .getElementById(sec)
+                  .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              {sec.replace("-", " ").toUpperCase()}
+              {sec.replace("&", " & ").toUpperCase()}
             </li>
           ))}
         </ul>
