@@ -29,29 +29,29 @@ export default function About() {
                         </h1>
 
                         <p className="text-gray-300 text-lg mb-4">
-    Soy estudiante de <span className="font-semibold text-white">Ingeniería en Sistemas</span>, con la tesis presentada y próximo a graduarme. 
-    Durante mi formación, he adquirido experiencia en <span className="font-semibold text-white">Java, HTML, CSS y SQL</span>, así como en otras tecnologías relacionadas con el desarrollo de software.
-</p>
-
-<p className="text-gray-300 text-lg mb-4">
-    Cuento con más de un año de experiencia específica en el desarrollo de aplicaciones y proyectos informáticos, que pueden ser evidenciados en mi <span className="font-semibold text-white">portafolio en línea</span>: 
-    <a href="https://portafolio-eight-lemon-46.vercel.app/" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">https://portafolio-eight-lemon-46.vercel.app/</a>.
-</p>
-
-<p className="text-gray-300 text-lg mb-4">
-    Me interesa participar en programas de <span className="font-semibold text-white">formación profesional intensiva</span> y proyectos financieros,
-    con el objetivo de especializarme en <span className="font-semibold text-white">tecnologías financieras</span> y aportar soluciones innovadoras.
-</p>
-
-<p className="text-gray-300 text-lg mb-4">
-    Me caracterizo por mi <span className="font-semibold text-white">actitud proactiva</span>, compromiso con el aprendizaje continuo
-    y disposición para trabajar <span className="font-semibold text-white">100% presencial</span>.
-</p>
-
-<p className="text-gray-300 text-lg">
-    Actualmente, busco oportunidades como <span className="font-semibold text-white">desarrollador junior</span>, donde pueda aplicar mis conocimientos,
-    aprender nuevas herramientas y contribuir activamente al crecimiento del sector tecnológico mediante soluciones prácticas y eficientes.
-</p>
+                            Soy estudiante de <span className="font-semibold text-white">Ingeniería en Sistemas</span>, con la tesis presentada y próximo a graduarme. 
+                            Durante mi formación, he adquirido experiencia en <span className="font-semibold text-white">Java, HTML, CSS y SQL</span>, así como en otras tecnologías relacionadas con el desarrollo de software.
+                        </p>
+                        
+                        <p className="text-gray-300 text-lg mb-4">
+                            Cuento con más de un año de experiencia específica en el desarrollo de aplicaciones y proyectos informáticos, que pueden ser evidenciados en mi <span className="font-semibold text-white">portafolio en línea</span>: 
+                            <a href="https://portafolio-eight-lemon-46.vercel.app/" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">https://portafolio-eight-lemon-46.vercel.app/</a>.
+                        </p>
+                        
+                        <p className="text-gray-300 text-lg mb-4">
+                            Me interesa participar en programas de <span className="font-semibold text-white">formación profesional intensiva</span> y proyectos financieros,
+                            con el objetivo de especializarme en <span className="font-semibold text-white">tecnologías financieras</span> y aportar soluciones innovadoras.
+                        </p>
+                        
+                        <p className="text-gray-300 text-lg mb-4">
+                            Me caracterizo por mi <span className="font-semibold text-white">actitud proactiva</span>, compromiso con el aprendizaje continuo
+                            y disposición para trabajar <span className="font-semibold text-white">100% presencial</span>.
+                        </p>
+                        
+                        <p className="text-gray-300 text-lg">
+                            Actualmente, busco oportunidades como <span className="font-semibold text-white">desarrollador junior</span>, donde pueda aplicar mis conocimientos,
+                            aprender nuevas herramientas y contribuir activamente al crecimiento del sector tecnológico mediante soluciones prácticas y eficientes.
+                        </p>
 
                     </div>
                 </motion.div>
