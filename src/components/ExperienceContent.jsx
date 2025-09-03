@@ -5,7 +5,7 @@ export default function ExperienceContent() {
         {
             company: "Biblioteca Nacional Pedro Henríquez Ureña (BNPHU)",
             role: "Software Programmer",
-            period: "Mar 2025 - Jun 2025",
+            period: "Feb 2025 - Jun 2025",
             location: "Dominican Republic · On-site",
             description: "HTML Emails, PHP y +6 skills",
         },
