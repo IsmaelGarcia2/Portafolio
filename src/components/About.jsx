@@ -34,13 +34,12 @@ export default function About() {
                         </p>
                         
                         <p className="text-gray-300 text-lg mb-4">
-                            Cuento con más de un año de experiencia específica en el desarrollo de aplicaciones y proyectos informáticos, que pueden ser evidenciados en mi <span className="font-semibold text-white">portafolio en línea</span>: 
-                            <a href="https://portafolio-eight-lemon-46.vercel.app/" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">https://portafolio-eight-lemon-46.vercel.app/</a>.
+                            Cuento con más de un año de experiencia específica en el desarrollo de aplicaciones y proyectos informáticos, lo que me ha permitido consolidar habilidades prácticas y aportar soluciones efectivas en distintos entornos de trabajo.
                         </p>
                         
                         <p className="text-gray-300 text-lg mb-4">
-                            Me interesa participar en programas de <span className="font-semibold text-white">formación profesional intensiva</span> y proyectos financieros,
-                            con el objetivo de especializarme en <span className="font-semibold text-white">tecnologías financieras</span> y aportar soluciones innovadoras.
+                            Me interesa participar en programas de <span className="font-semibold text-white">formación profesional intensiva</span> y en proyectos de desarrollo de software innovador,
+                            con el objetivo de especializarme en <span className="font-semibold text-white">tecnologías aplicadas al desarrollo de soluciones eficientes</span> y contribuir con ideas creativas.
                         </p>
                         
                         <p className="text-gray-300 text-lg mb-4">
