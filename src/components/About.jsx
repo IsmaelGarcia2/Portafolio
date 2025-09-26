@@ -29,32 +29,26 @@ export default function About() {
                         </h1>
 
                         <p className="text-gray-300 text-lg mb-4">
-                            Soy estudiante de <span className="font-semibold text-white">Ingeniería en Sistemas</span>, con la tesis presentada y próximo a graduarme. 
-                            Durante mi formación, he adquirido experiencia en <span className="font-semibold text-white">Java, HTML, CSS y SQL</span>, así como en otras tecnologías relacionadas con el desarrollo de software.
-                        </p>
-                        
-                        <p className="text-gray-300 text-lg mb-4">
-                            Cuento con más de un año de experiencia específica en el desarrollo de aplicaciones y proyectos informáticos, lo que me ha permitido consolidar habilidades prácticas y aportar soluciones efectivas en distintos entornos de trabajo.
-                        </p>
-                        
-                        <p className="text-gray-300 text-lg mb-4">
-                            Me interesa participar en programas de <span className="font-semibold text-white">formación profesional intensiva</span> y en proyectos de desarrollo de software innovador,
-                            con el objetivo de especializarme en <span className="font-semibold text-white">tecnologías aplicadas al desarrollo de soluciones eficientes</span> y contribuir con ideas creativas.
-                        </p>
-                        
-                        <p className="text-gray-300 text-lg mb-4">
-                            Me caracterizo por mi <span className="font-semibold text-white">actitud proactiva</span>, compromiso con el aprendizaje continuo
-                            y disposición para trabajar <span className="font-semibold text-white">100% presencial</span>.
-                        </p>
-                        
-                        <p className="text-gray-300 text-lg">
-                            Actualmente, busco oportunidades como <span className="font-semibold text-white">desarrollador junior</span>, donde pueda aplicar mis conocimientos,
-                            aprender nuevas herramientas y contribuir activamente al crecimiento del sector tecnológico mediante soluciones prácticas y eficientes.
+                            Soy <span className="font-semibold text-white">Ingeniero en Sistemas</span> con experiencia en{" "}
+                            <span className="font-semibold text-white">Java, HTML, CSS y SQL</span>. 
+                            He trabajado en el desarrollo de aplicaciones y proyectos web, aplicando soluciones prácticas que mejoran la experiencia del usuario y optimizan procesos en distintos entornos.
                         </p>
 
+                        <p className="text-gray-300 text-lg mb-4">
+                            Me apasiona el aprendizaje continuo y el mundo del{" "}
+                            <span className="font-semibold text-white">desarrollo de software</span>. 
+                            Disfruto enfrentar retos técnicos y transformar ideas en soluciones funcionales e innovadoras que aporten valor real.
+                        </p>
+
+                        <p className="text-gray-300 text-lg">
+                            Actualmente busco oportunidades como{" "}
+                            <span className="font-semibold text-white">desarrollador junior</span>, donde pueda aplicar mis conocimientos, 
+                            seguir creciendo profesionalmente y contribuir activamente al sector tecnológico con proyectos creativos y eficientes.
+                        </p>
                     </div>
                 </motion.div>
             </div>
         </section>
     );
 }
+
