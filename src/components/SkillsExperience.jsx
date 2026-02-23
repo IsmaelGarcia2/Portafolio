@@ -1,3 +1,4 @@
+// src/components/SkillsExperience.jsx
 import React, { useState } from "react";
 import { Code, Briefcase } from "lucide-react";
 
@@ -16,12 +17,10 @@ export default function SkillsExperience() {
     <section className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-6">
 
-        {/* Título */}
         <h2 className="text-4xl font-bold text-center mb-12">
           Skills & Experience
         </h2>
 
-        {/* Tabs */}
         <div className="flex justify-center mb-12">
           <div className="flex bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-lg">
             {tabs.map((tab) => (
@@ -41,7 +40,6 @@ export default function SkillsExperience() {
           </div>
         </div>
 
-        {/* Contenido dinámico */}
         <div>
           {activeTab === "skills" ? <Skills /> : <ExperienceContent />}
         </div>
