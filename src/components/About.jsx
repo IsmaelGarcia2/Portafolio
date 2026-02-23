@@ -49,21 +49,6 @@ export default function About() {
                             Me enfoco en resolver problemas reales mediante tecnología,
                             automatizar procesos y crear sistemas que aporten valor medible.
                         </p>
-
-                        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
-                                Python
-                            </span>
-                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
-                                APIs
-                            </span>
-                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
-                                CRM Automation
-                            </span>
-                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
-                                SQL
-                            </span>
-                        </div>
                     </div>
                 </motion.div>
             </div>
