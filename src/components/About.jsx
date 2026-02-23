@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import fotoIsmael from "../assets/new.JPEG";
+import fotoIsmael from "../assets/new.png";
 
 export default function About() {
     return (
