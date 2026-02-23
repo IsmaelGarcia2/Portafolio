@@ -36,18 +36,18 @@ export default function About() {
                         </h1>
 
                         <h2 className="text-cyan-400 text-xl mb-6 font-medium tracking-wide">
-                            Backend Developer · CRM Automation · Systems Engineer
+                            Software Engineer · Backend & Web Development · Process Automation
                         </h2>
 
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            Ingeniero en Sistemas especializado en desarrollo backend y automatización de procesos.
-                            Experiencia trabajando con <span className="text-white font-semibold">Python, APIs, SQL y CRM Automation</span>,
-                            optimizando flujos de negocio y construyendo soluciones eficientes.
+                            Ingeniero en Sistemas con experiencia en desarrollo de software y construcción de soluciones web.
+                            Trabajo en el diseño de sistemas escalables, integración de APIs y optimización de procesos empresariales,
+                            utilizando tecnologías modernas y buenas prácticas de arquitectura.
                         </p>
 
                         <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                            Me enfoco en resolver problemas reales mediante tecnología,
-                            automatizar procesos y crear sistemas que aporten valor medible.
+                            Me enfoco en crear soluciones eficientes, automatizar flujos de trabajo y desarrollar aplicaciones
+                            que generen impacto real y valor medible para los proyectos en los que participo.
                         </p>
                     </div>
                 </motion.div>
