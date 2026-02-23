@@ -4,7 +4,7 @@ export default function ExperienceContent() {
     const experiences = [
         {
             company: "Nax Solutions",
-            role: "Backend Support Engineer (Python & APIs)",
+            role: "Backend Support Engineer ",
             period: "Feb 2026 - Present",
             location: "Alicante, Spain · Remote",
             description: [
