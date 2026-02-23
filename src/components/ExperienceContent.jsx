@@ -16,6 +16,19 @@ export default function ExperienceContent() {
             ],
         },
         {
+            company: "Komanda F5",
+            role: "CRM Automation Trainee",
+            period: "Sep 2025 - Nov 2025",
+            location: "Dubai, United Arab Emirates · Remote",
+            description: [
+                "Automation of CRM processes using Kommo CRM (Salesbots, triggers, and workflows)",
+                "Design of intelligent lead routing systems based on custom business logic",
+                "Optimization of lead lifecycle management through automated task flows",
+                "Implementation of trigger-based actions and conditional automations",
+                "Performance monitoring and documentation of CRM automation results"
+            ],
+        },
+        {
             company: "Biblioteca Nacional Pedro Henríquez Ureña (BNPHU)",
             role: "Software Programmer",
             period: "Feb 2025 - Jun 2025",
@@ -65,10 +78,8 @@ export default function ExperienceContent() {
                         key={idx}
                         className="relative bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700/40 hover:scale-[1.02] transition-transform duration-300"
                     >
-                        {/* Timeline Dot */}
                         <span className="absolute -left-3 top-6 w-6 h-6 rounded-full bg-indigo-500 border-4 border-gray-900"></span>
 
-                        {/* Content */}
                         <p className="text-sm text-indigo-300 font-medium">{exp.period}</p>
                         <h3 className="text-xl font-semibold text-white mt-1">
                             {exp.company}
