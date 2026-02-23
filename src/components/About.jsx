@@ -3,52 +3,70 @@ import fotoIsmael from "../assets/new.png";
 
 export default function About() {
     return (
-        <section id="About" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
-            <div className="max-w-screen-xl mx-auto">
+        <section id="About" className="relative py-24 px-6 bg-gradient-to-br from-[#0f172a] via-[#0b1120] to-[#020617] overflow-hidden">
+
+            {/* Glow decorativo */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-cyan-500/10 blur-[120px] rounded-full"></div>
+
+            <div className="max-w-screen-xl mx-auto relative z-10">
                 <motion.div
-                    className="flex flex-col md:flex-row items-center bg-white/10 backdrop-blur-sm p-10 rounded-2xl shadow-lg gap-12"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    className="flex flex-col md:flex-row items-center gap-16 bg-white/5 backdrop-blur-xl p-12 rounded-3xl border border-white/10 shadow-2xl"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
                 >
                     {/* Foto */}
-                    <div className="flex-shrink-0 md:w-1/3">
-                        <img
+                    <div className="relative md:w-1/3 flex justify-center">
+                        <div className="absolute w-72 h-72 bg-cyan-400/20 blur-3xl rounded-full"></div>
+
+                        <motion.img
                             src={fotoIsmael}
                             alt="Ismael García Aquino"
-                            className="mx-auto mb-6 rounded-lg shadow-lg"
-                            width={250}
-                            height={320}
+                            className="relative w-72 h-96 object-cover rounded-3xl shadow-2xl border border-white/10"
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 200 }}
                         />
                     </div>
 
                     {/* Texto */}
                     <div className="md:w-2/3 text-center md:text-left">
-                        <h1 className="text-4xl font-bold text-white drop-shadow-md mb-6">
+                        <h1 className="text-5xl font-bold text-white mb-4">
                             Ismael García Aquino
                         </h1>
 
-                        <p className="text-gray-300 text-lg mb-4">
-                            Soy <span className="font-semibold text-white">Ingeniero en Sistemas</span> con experiencia en{" "}
-                            <span className="font-semibold text-white">Java, HTML, CSS y SQL</span>. 
-                            He trabajado en el desarrollo de aplicaciones y proyectos web, aplicando soluciones prácticas que mejoran la experiencia del usuario y optimizan procesos en distintos entornos.
+                        <h2 className="text-cyan-400 text-xl mb-6 font-medium tracking-wide">
+                            Backend Developer · CRM Automation · Systems Engineer
+                        </h2>
+
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                            Ingeniero en Sistemas especializado en desarrollo backend y automatización de procesos.
+                            Experiencia trabajando con <span className="text-white font-semibold">Python, APIs, SQL y CRM Automation</span>,
+                            optimizando flujos de negocio y construyendo soluciones eficientes.
                         </p>
 
-                        <p className="text-gray-300 text-lg mb-4">
-                            Me apasiona el aprendizaje continuo y el mundo del{" "}
-                            <span className="font-semibold text-white">desarrollo de software</span>. 
-                            Disfruto enfrentar retos técnicos y transformar ideas en soluciones funcionales e innovadoras que aporten valor real.
+                        <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                            Me enfoco en resolver problemas reales mediante tecnología,
+                            automatizar procesos y crear sistemas que aporten valor medible.
                         </p>
 
-                        <p className="text-gray-300 text-lg">
-                            Actualmente busco oportunidades como{" "}
-                            <span className="font-semibold text-white">desarrollador junior</span>, donde pueda aplicar mis conocimientos, 
-                            seguir creciendo profesionalmente y contribuir activamente al sector tecnológico con proyectos creativos y eficientes.
-                        </p>
+                        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
+                                Python
+                            </span>
+                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
+                                APIs
+                            </span>
+                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
+                                CRM Automation
+                            </span>
+                            <span className="px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-400/20 text-sm">
+                                SQL
+                            </span>
+                        </div>
                     </div>
                 </motion.div>
             </div>
         </section>
     );
 }
-
