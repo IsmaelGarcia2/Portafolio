@@ -2,58 +2,63 @@ import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+  const links = [
+    {
+      href: "https://github.com/IsmaelGarcia2",
+      icon: <FaGithub size={22} />,
+      label: "GitHub",
+      color: "hover:bg-white hover:text-black"
+    },
+    {
+      href: "https://www.linkedin.com/in/ismael-garc%C3%ADa-aquino/",
+      icon: <FaLinkedin size={22} />,
+      label: "LinkedIn",
+      color: "hover:bg-blue-600"
+    },
+    {
+      href: "https://wa.me/18494421480",
+      icon: <FaWhatsapp size={22} />,
+      label: "WhatsApp",
+      color: "hover:bg-green-600"
+    },
+    {
+      href: "mailto:ismaelgar336@gmail.com",
+      icon: <FaEnvelope size={22} />,
+      label: "Email",
+      color: "hover:bg-red-600"
+    }
+  ];
+
   return (
-    <section id="Contact" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
-      <h2 className="text-3xl font-bold text-center mb-6 text-white drop-shadow-md">
-        Contáctame
-      </h2>
-      <p className="text-center text-gray-300 mb-12 drop-shadow-sm">
-        Estoy abierto a nuevas oportunidades y proyectos. ¡Hablemos!
-      </p>
-      <div className="flex flex-wrap justify-center gap-6">
-        <motion.a
-          href="https://github.com/IsmaelGarcia2"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2 bg-gray-800 shadow-lg rounded-xl px-6 py-3 hover:shadow-2xl transition"
-        >
-          <FaGithub className="text-white" size={24} />
-          <span className="font-semibold text-white">GitHub</span>
-        </motion.a>
+    <section id="Contact" className="relative py-24 px-6 bg-gradient-to-br from-[#0f172a] via-[#0b1120] to-[#020617]">
 
-        <motion.a
-          href="https://www.linkedin.com/in/ismael-garc%C3%ADa-aquino/"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2 bg-blue-700 shadow-lg rounded-xl px-6 py-3 hover:shadow-2xl transition"
-        >
-          <FaLinkedin className="text-white" size={24} />
-          <span className="font-semibold text-white">LinkedIn</span>
-        </motion.a>
+      <div className="max-w-4xl mx-auto text-center">
 
-        <motion.a
-          href="https://wa.me/18494421480"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2 bg-green-600 shadow-lg rounded-xl px-6 py-3 hover:shadow-2xl transition"
-        >
-          <FaWhatsapp className="text-white" size={24} />
-          <span className="font-semibold text-white">WhatsApp</span>
-        </motion.a>
+        <h2 className="text-4xl font-bold text-white mb-4">
+          Contáctame
+        </h2>
 
-        <motion.a
-          href="mailto:ismaelgar336@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2 bg-red-600 shadow-lg rounded-xl px-6 py-3 hover:shadow-2xl transition"
-        >
-          <FaEnvelope className="text-white" size={24} />
-          <span className="font-semibold text-white">Email</span>
-        </motion.a>
+        <p className="text-gray-400 mb-12 text-lg">
+          Disponible para oportunidades remotas y proyectos backend / automatización.
+        </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {links.map((link, index) => (
+            <motion.a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+              className={`flex flex-col items-center justify-center gap-3 p-6 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 text-white transition-all duration-300 ${link.color}`}
+            >
+              {link.icon}
+              <span className="font-medium">{link.label}</span>
+            </motion.a>
+          ))}
+        </div>
+
       </div>
     </section>
   );
