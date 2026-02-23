@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import fotoIsmael from "../assets/Aduanas.JPEG";
+import fotoIsmael from "../assets/new.JPEG";
 
 export default function About() {
     return (
