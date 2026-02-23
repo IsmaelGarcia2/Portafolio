@@ -2,29 +2,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// Logos
-import python from "../assets/skills/python.png";
-import java from "../assets/skills/java.png";
-import php from "../assets/skills/php.png";
-import node from "../assets/skills/node.png";
-import reactLogo from "../assets/skills/react.png";
-import mysql from "../assets/skills/mysql.png";
-import mongodb from "../assets/skills/mongodb.png";
-import docker from "../assets/skills/docker.png";
-import git from "../assets/skills/git.png";
-import linux from "../assets/skills/linux.png";
-import html from "../assets/skills/html.png";
-import css from "../assets/skills/css.png";
-import js from "../assets/skills/js.png";
-import tailwind from "../assets/skills/tailwind.png";
-import wordpress from "../assets/skills/wordpress.png";
+// Logos (todos desde src/assets y en .svg)
+import python from "../assets/python.svg";
+import java from "../assets/java.svg";
+import php from "../assets/php.svg";
+import mysql from "../assets/mysql.svg";
+import mongodb from "../assets/mongodb.svg";
+import reactLogo from "../assets/react.svg";
+import git from "../assets/git.svg";
+import linux from "../assets/linux.svg";
+import docker from "../assets/docker.svg";
+import wordpress from "../assets/wordpress.svg";
+
+// Si tienes estos en svg también:
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
+import js from "../assets/js.svg";
+import tailwind from "../assets/tailwind.svg";
 
 const skillsData = {
   Backend: [
     { name: "Python", logo: python },
     { name: "Java", logo: java },
     { name: "PHP", logo: php },
-    { name: "Node.js", logo: node },
     { name: "MySQL", logo: mysql },
     { name: "MongoDB", logo: mongodb },
   ],
