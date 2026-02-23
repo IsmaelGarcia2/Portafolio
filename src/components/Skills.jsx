@@ -1,58 +1,77 @@
 // src/components/Skills.jsx
 import React from "react";
-import dockerLogo from "../assets/docker.svg";
-import figmaLogo from "../assets/figma.svg";
-import gitLogo from "../assets/git.svg";
-import javaLogo from "../assets/java.svg";
-import linuxLogo from "../assets/linux.svg";
-import mongoLogo from "../assets/mongodb.svg";
-import mysqlLogo from "../assets/mysql.svg";
-import phpLogo from "../assets/php.svg";
-import pythonLogo from "../assets/python.svg";
-import reactLogo from "../assets/react.svg";
-import wordpressLogo from "../assets/wordpress.svg";
+import { motion } from "framer-motion";
 
-const skillsIcons = [
-    { src: dockerLogo, name: "Docker" },
-    { src: figmaLogo, name: "Figma" },
-    { src: gitLogo, name: "Git" },
-    { src: javaLogo, name: "Java" },
-    { src: linuxLogo, name: "Linux" },
-    { src: mongoLogo, name: "MongoDB" },
-    { src: mysqlLogo, name: "MySQL" },
-    { src: phpLogo, name: "PHP" },
-    { src: pythonLogo, name: "Python" },
-    { src: reactLogo, name: "React" },
-    { src: wordpressLogo, name: "WordPress" },
-    { src: "devicon-html5-plain colored", name: "HTML5", isIcon: true },
-    { src: "devicon-css3-plain colored", name: "CSS3", isIcon: true },
-    { src: "devicon-javascript-plain colored", name: "JavaScript", isIcon: true },
-    { src: "devicon-nodejs-plain colored", name: "Node.js", isIcon: true },
-    { src: "devicon-tailwindcss-plain colored", name: "Tailwind", isIcon: true },
-    { src: "devicon-visualstudio-plain colored", name: "VS Code", isIcon: true },
-];
+// Logos
+import python from "../assets/skills/python.png";
+import java from "../assets/skills/java.png";
+import php from "../assets/skills/php.png";
+import node from "../assets/skills/node.png";
+import reactLogo from "../assets/skills/react.png";
+import mysql from "../assets/skills/mysql.png";
+import mongodb from "../assets/skills/mongodb.png";
+import docker from "../assets/skills/docker.png";
+import git from "../assets/skills/git.png";
+import linux from "../assets/skills/linux.png";
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import js from "../assets/skills/js.png";
+import tailwind from "../assets/skills/tailwind.png";
+import wordpress from "../assets/skills/wordpress.png";
+
+const skillsData = {
+  Backend: [
+    { name: "Python", logo: python },
+    { name: "Java", logo: java },
+    { name: "PHP", logo: php },
+    { name: "Node.js", logo: node },
+    { name: "MySQL", logo: mysql },
+    { name: "MongoDB", logo: mongodb },
+  ],
+  Frontend: [
+    { name: "React", logo: reactLogo },
+    { name: "HTML5", logo: html },
+    { name: "CSS3", logo: css },
+    { name: "JavaScript", logo: js },
+    { name: "Tailwind CSS", logo: tailwind },
+    { name: "WordPress", logo: wordpress },
+  ],
+  DevOps: [
+    { name: "Docker", logo: docker },
+    { name: "Git", logo: git },
+    { name: "Linux", logo: linux },
+  ],
+};
 
 export default function Skills() {
-    return (
-        <section id="skills" className="py-16 bg-gray-900">
-            <h2 className="text-center text-3xl font-bold text-cyan-400 mb-10 flex items-center justify-center gap-2">
-                Skills
-            </h2>
-            <div className="max-w-6xl mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8">
-                {skillsIcons.map((skill, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-center bg-white/5 rounded-xl p-4 shadow-md hover:scale-110 transition-transform duration-300"
-                    >
-                        {skill.isIcon ? (
-                            <i className={`${skill.src} text-5xl`}></i>
-                        ) : (
-                            <img src={skill.src} alt={skill.name} className="h-12 w-12" />
-                        )}
-                        <p className="text-sm mt-2 text-white">{skill.name}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <div className="space-y-16">
+      {Object.entries(skillsData).map(([category, skills], index) => (
+        <div key={index}>
+          <h3 className="text-2xl font-semibold text-cyan-400 mb-8">
+            {category}
+          </h3>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            {skills.map((skill, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.08 }}
+                className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg hover:border-cyan-400/40 hover:shadow-cyan-500/20 transition-all duration-300"
+              >
+                <img
+                  src={skill.logo}
+                  alt={skill.name}
+                  className="w-12 h-12 object-contain mb-4"
+                />
+                <p className="text-white text-sm font-medium text-center">
+                  {skill.name}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
